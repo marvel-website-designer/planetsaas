@@ -1,0 +1,477 @@
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: poppins, sans-serif;
+        background: #fff;
+        /* background: linear-gradient(135deg, #a18cd1, #3b82f6); */
+        color: #111;
+        margin: 0;
+        padding: 0;
+        }
+        /* =============================================== HEADER =============================================== */
+
+        header {
+            background-image: url('FramerTools/FramerMultiColor.png');
+            background-size: cover;
+            background-position: center;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            overflow: hidden; 
+            height: 75em;
+        }
+/* =============================================== NAVBAR =============================================== */
+        .navbar {
+            max-width: 900px;
+            background: white;
+            border-radius: 999px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+            position: relative;
+            margin-top: 2em;
+        }
+
+        .nav-left {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        .nav-left a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .nav-center a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        /* =============================================== END NAVBAR =============================================== */
+
+
+
+        /* =============================================== HERO SECTION  =============================================== */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            position: relative;
+            text-align: center;
+            margin-top: 6em;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            color: #111;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+            margin-top: 1rem;
+            line-height: 1.3;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ================================================== END OF HERO SECTION ================================================= */
+
+      
+
+
+/* ================================================== END OF HEADER ================================================= */
+
+        
+
+/* =============================================== TOOLS I USE =============================================== */
+
+
+.tech-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px 20px;
+      border-radius: 12px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .tech-section h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #7c7c7c;
+    }
+
+    .scroll-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scroll-track {
+      display: flex;
+      width: fit-content;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .scroll-track img {
+      width: 60px;
+      height: 60px;
+      margin: 0 25px;
+      object-fit: contain;
+      filter: brightness(1.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+
+/* =============================================== END OF TOOLS I USE =============================================== */
+
+
+    /* =============================================== TRANSFORMER =============================================== */
+
+    .transform-section {
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 40px;
+        background: #f1f6fb;
+        border-radius: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .text-content {
+        flex: 1 1 350px;
+        margin-top: 5rem;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        line-height: 1.4;
+        color: #3f3f3f;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        color: #8f9192;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .success {
+        color: #10b981;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        flex: 1 1 500px;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 20px 24px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+        transition: 0.3s ease;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 15px;
+        color: #4b5563;
+        margin-bottom: 16px;
+        line-height: 1.5;
+    }
+
+    .card button {
+        background: linear-gradient(to bottom, #c0b4de, #3b82f6);
+        color: #fff;
+        border: none;
+        padding: 10px 22px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+/* =============================================== END OF TRANSFORMER =============================================== */
+
+
+
+
+/* =============================================== SOFTWARE SECTION=============================================== */
+
+
+.software-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  border-radius: 20px;
+  background: #f9f9fb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.software-left {
+  flex: 1 1 480px;
+}
+
+.software-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.software-left p {
+  font-size: 20px;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.feature img {
+  margin-top: 4px;
+}
+
+.feature strong {
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.software-right {
+  /* flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; */
+}
+.software-right img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================================= FAQ Styling ========================================================= */
+
+    .faq-container {
+      /* max-width: 800px; */
+      /* margin: 80px auto; */
+      padding: 0 1rem;
+    }
+
+    .faq-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .faq-item {
+      background: var(--color-glass);
+      /* border-radius: 16px; */
+      margin-bottom: 1rem;
+      overflow: hidden;
+      border-bottom: 1px solid #ededed;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      padding: 1rem;
+      cursor: pointer;
+      color: #7c7c7c;
+    }
+
+    .faq-question h3 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+      color: rgb(117, 117, 117);
+    }
+
+    .faq-answer {
+      padding: 0 1.2rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.3s ease;
+      font-size: 1rem;
+      color: #7c7c7c;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.2rem 1rem;
+      max-height: 500px;
+    }
+
+    .faq-item .icon i {
+      font-size: 1.2rem;
+      color: var(--color-muted);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .icon i {
+      transform: rotate(180deg);
+    }
+
+
+    @media (max-width: 768px) {
+      #software, #FlexibleCloud {
+        flex-direction: column-reverse;
+      }
+      #AImarketing {
+        flex-direction: column;
+      }
+    }
+
+
+/* =============================================== END OF SOFTWARE SECTION=============================================== */
+
+
+
+
+
+
+/* =============================================== TAB RESPONSIVE =============================================== */
+
+
+    @media (max-width: 1024px) {
+
+        header {
+            height: 66em;
+        }
+
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .container {
+            text-align: center;
+        } 
+
+        .nav-center, .nav-right {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+         .hero h1 {
+            font-size: 3.5rem;
+        }
+
+         .transform-section {
+            /* max-width: 90%; */
+            margin: 40px auto;
+            padding: 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px 15px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+            transition: 0.3s ease;
+        }
+        .card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+
+    }
+
+    @media (max-width: 768px) {
+
+         header {
+            height: 45em;
+        }
+        .hero h1 {
+            font-size: 26px;
+            line-height: 1.4;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .hero br {
+            display: none;
+        }
+        .transform-section {
+            /* max-width: 90%; */
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .transform-section h1 {
+            font-size: 26px;
+        }
+        .transform-section p {
+            font-size: 16px;
+        }
+
+    }
