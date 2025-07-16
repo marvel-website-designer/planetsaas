@@ -5,7 +5,8 @@
         }
 
         body {
-        font-family: poppins, sans-serif;
+        font-family: "Poppins", sans-serif;
+
         background: #fff;
         /* background: linear-gradient(135deg, #a18cd1, #3b82f6); */
         color: #111;
@@ -292,11 +293,11 @@
 }
 
 .software-right {
-  /* flex: 1 1 500px;
+  flex: 1 1 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; */
+  position: relative;
 }
 .software-right img {
   width: 100%;
@@ -355,6 +356,10 @@
       font-size: 1rem;
       color: #7c7c7c;
     }
+    .faq-answer p {
+      font-size: 17px;
+      color: #6d6d6d;
+    }
 
     .faq-item.active .faq-answer {
       padding: 0 1.2rem 1rem;
@@ -383,6 +388,177 @@
 
 
 /* =============================================== END OF SOFTWARE SECTION=============================================== */
+
+
+
+/* =============================================== SolutionS =============================================== */
+
+    #solutions {
+      max-width: 1200px;
+      margin: auto;
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    .headline {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .headline span {
+      color: #7a5af8;
+    }
+
+    .description {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    #solutionGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      justify-content: center;
+    }
+
+    #solutionCard {
+      background: #ffffff;
+      border: 1px solid #eee;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .solutionIcon {
+      font-size: 40px;
+      color: #7a5af8;
+      margin-bottom: 40px;
+    }
+
+    #solutionCard h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #606060;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #666;
+    }
+
+
+/* =============================================== END OF SolutionS =============================================== */
+
+
+/* =============================================== Development Solutions =============================================== */
+
+    #development {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section-label {
+      font-size: 13px;
+      color: #a3a3a3;
+      margin-bottom: 10px;
+      padding: 4px 12px;
+      display: inline-block;
+      border-radius: 12px;
+      background-color: #f2f2f5;
+    }
+
+    .headline {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .headline span {
+      color: #7b61ff;
+    }
+
+    .subtext {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 50px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .developmentCard {
+      background-color: #f6f8fc;
+      border-radius: 24px;
+      padding: 32px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .badge {
+      font-size: 13px;
+      color: #7b61ff;
+      background-color: #fff;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .developmentCard h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    .developmentCard p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .developmentCard img {
+      width: 100%;
+      max-width: 700px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    @media screen and (max-width: 768px) {
+      .headline {
+        font-size: 28px;
+      }
+
+      .card {
+        padding: 24px;
+      }
+    }
+
+
+/* =============================================== END OF Development Solutions =============================================== */
 
 
 
@@ -445,6 +621,43 @@
         }
 
 
+        
+/* =============================================== SolutionS =============================================== */
+
+    .description {
+      font-size: 20px;
+    }
+
+    #solutionGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 350px);
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+    .icon {
+      font-size: 30px;
+      color: #7a5af8;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 24px;
+    }
+
+    .card p {
+      font-size: 20px;
+    }
+
+
+/* =============================================== END OF SolutionS =============================================== */
+
+
     }
 
     @media (max-width: 768px) {
@@ -473,5 +686,42 @@
         .transform-section p {
             font-size: 16px;
         }
+
+        
+/* =============================================== SolutionS =============================================== */
+
+    .description {
+      font-size: 20px;
+    }
+
+    #solutionGrid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+    }
+
+
+    .icon {
+      font-size: 30px;
+      color: #7a5af8;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+    }
+
+    .card p {
+      font-size: 18px;
+    }
+
+
+/* =============================================== END OF SolutionS =============================================== */
 
     }
