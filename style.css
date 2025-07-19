@@ -5,8 +5,7 @@
         }
 
         body {
-        font-family: "Poppins", sans-serif;
-
+        font-family: 'Inter', sans-serif;
         background: #fff;
         /* background: linear-gradient(135deg, #a18cd1, #3b82f6); */
         color: #111;
@@ -561,6 +560,331 @@
 /* =============================================== END OF Development Solutions =============================================== */
 
 
+
+
+
+/* =============================================== PRICING =============================================== */
+
+
+    .pricingHead {
+      background-image:  url('FramerTools/FramerMultiColor.png');
+    }
+    #containerPricing {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    #containerPricing h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .pricingP {
+      color: #7a7a7a;
+      margin-bottom: 16px;
+    }
+
+    #containerPricing .toggle {
+      display: inline-flex;
+      background-color: #f3f3f3;
+      border-radius: 999px;
+      padding: 5px;
+      margin-bottom: 40px;
+    }
+
+    #containerPricing .toggle button {
+      background: none;
+      border: none;
+      padding: 8px 20px;
+      font-size: 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #containerPricing .toggle .active {
+      background-color: #7b61ff;
+      color: white;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      justify-content: center;
+    }
+
+    .pricingCard {
+      background-color: white;
+      padding: 32px;
+      border-radius: 24px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .pricingCard h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .pricingCard .price {
+      font-size: 26px;
+      font-weight: 700;
+      color: #7b61ff;
+      margin-bottom: 6px;
+    }
+
+
+    .price-text {
+      display: inline-block;
+      animation: slideFade 0.4s ease-in-out;
+    }
+
+    @keyframes slideFade {
+      0% {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .pricingCard .per-month {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+    .pricingCard .per-month.active {
+      color: #fff;
+    }
+
+    .pricingCard .description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 24px;
+    }
+    .pricingCard .description.active {
+      color: #fff;
+    }
+
+    .pricingBtn {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      font-weight: 600;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      background-color: white;
+      cursor: pointer;
+      transition: 0.2s ease;
+      color:#686666
+    }
+    .pricingBtn.active {
+      color:#7b61ff
+    }
+
+    .pricingBtn :hover {
+      border-color: #7b61ff;
+      color: #7b61ff;
+    }
+
+    #containerPricing .pricingCard.active {
+      background-color: #7b61ff;
+      color: white;
+    }
+
+    #containerPricing .pricingCard.active .price {
+      color: white;
+    }
+
+    #containerPricing .pricingCard .active button {
+      background-color: white;
+      color: #7b61ff;
+      border: none;
+    }
+
+    #containerPricing ul.features {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    #containerPricing ul.features li {
+      font-size: 14px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    #containerPricing ul.features li::before {
+      content: '✓';
+      color: #7b61ff;
+      font-weight: bold;
+    }
+    #containerPricing ul.features.active li::before {
+      content: '✓';
+      color: #fff;
+      font-weight: bold;
+    }
+
+    #containerPricing ul.features li.disabled::before {
+      content: '✕';
+      color: #bbb;
+    }
+
+    #containerPricing ul.features li.disabled {
+      color: #aaa;
+    }
+
+    @media screen and (max-width: 768px) {
+      #containerPricing h1 {
+        font-size: 28px;
+      }
+      .pricingP {
+      color: #7a7a7a;
+      font-size: 15px;
+     }
+     br {
+      display: none;
+     }
+    }
+
+
+
+
+/* =============================================== END OF PRICING =============================================== */
+
+
+
+
+
+
+
+
+/* =============================================== SUBSCRIBE LETTER =============================================== */
+    .letter {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f9fb;
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-container {
+      max-width: 900px;
+      width: 100%;
+      background: linear-gradient(135deg, #efeaff, #f4f1ff);
+      border-radius: 40px;
+      padding: 60px 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+      text-align: center;
+      background-image: url('FramerTools/FramerLetterBckg.png');
+    }
+
+    .cta-container h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1a1a1a;
+    }
+
+    .cta-container p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-inline: auto;
+    }
+
+    .cta-form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta-form input[type="email"] {
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: none;
+      width: 300px;
+      font-size: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-form input:focus {
+      box-shadow: 0 0 0 2px #6c4dff4d;
+    }
+
+    .cta-form button {
+      background-color: #6c4dff;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta-form button:hover {
+      background-color: #5b3be3;
+    }
+
+    @media (max-width: 768px) {
+      .cta-container {
+        padding: 40px 20px;
+      }
+
+      .cta-container h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-form {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-form input,
+      .cta-form button {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .cta-container h2 {
+        font-size: 1.6rem;
+      }
+
+      .cta-container p {
+        font-size: 0.95rem;
+      }
+
+      .cta-form input {
+        font-size: 14px;
+      }
+
+      .cta-form button {
+        font-size: 14px;
+      }
+    }
+
+
+
+
+
+/* =============================================== END OF SUBSCRIBE LETTER =============================================== */
 
 
 
