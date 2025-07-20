@@ -1,0 +1,53 @@
+<aside class="text-content fade-zoom">
+    <h1>Transform Your<br>Businesses Growth</h1>
+    <p>
+        Boost your business with powerful tools and services to make growth easier, faster, and more effective.
+        From optimized software to expert support, we’ll help your startup thrive.
+    </p>
+    <div class="success">✅ 97% the will boost your businesses sales</div>
+</aside>
+
+<aside class="cards-grid">
+    <div class="card slide-up">...</div>
+    <div class="card slide-up">...</div>
+    <div class="card slide-up">...</div>
+    <div class="card slide-up">...</div>
+</aside>
+<style>
+  /* Initial states */
+.fade-zoom, .slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.in-view.fade-zoom {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.in-view.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% of element is visible
+  );
+
+  document.querySelectorAll('.fade-zoom, .slide-up').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+

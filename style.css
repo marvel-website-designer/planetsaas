@@ -12,6 +12,27 @@
         margin: 0;
         padding: 0;
         }
+        /* =============================================== CAR ANIMATE =============================================== */
+
+
+        .fade-zoom, .slide-up {
+          opacity: 0;
+          transform: translateY(40px);
+          transition: all 0.8s ease-out;
+        }
+
+        .in-view.fade-zoom {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        .in-view.slide-up {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+
+
         /* =============================================== HEADER =============================================== */
 
         header {
@@ -93,6 +114,25 @@
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
+
+        .fade-zoom {
+          opacity: 0;
+          transform: scale(0.95);
+          animation: fadeZoomIn 1s ease-out forwards;
+        }
+
+        /* Optional: Add a slight delay to create a staggered effect */
+        .fade-zoom:nth-child(1) { animation-delay: .9s; }
+        .fade-zoom:nth-child(2) { animation-delay: 0.8s; }
+        .fade-zoom:nth-child(3) { animation-delay: 0.8s; }
+
+        @keyframes fadeZoomIn {
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
 
         /* ================================================== END OF HERO SECTION ================================================= */
 

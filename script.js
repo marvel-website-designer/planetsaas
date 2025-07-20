@@ -55,3 +55,24 @@
         if (!isOpen) item.classList.add('active');
       });
     });
+
+
+// ================================================================ SCROLL ANIMATE
+
+ // SCROLL ANIMATE
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    { threshold: 0.3} // Trigger when 20% of element is visible
+  );
+
+  document.querySelectorAll('.fade-zoom, .slide-up').forEach(el => {
+    observer.observe(el);
+  });
