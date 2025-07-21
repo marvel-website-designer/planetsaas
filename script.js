@@ -73,6 +73,27 @@
     { threshold: 0.3} // Trigger when 20% of element is visible
   );
 
-  document.querySelectorAll('.fade-zoom, .slide-up').forEach(el => {
+  document.querySelectorAll('.fade-zoom, .slide-up, .fade-zoom').forEach(el => {
     observer.observe(el);
+  });
+
+
+  // ==================================================================== MENU BAR
+const toggleBtn = document.getElementById("navToggle");
+  const navbar = document.getElementById("navbar");
+  const icon = document.getElementById("menuIcon");
+
+  toggleBtn.addEventListener("click", () => {
+    navbar.classList.toggle("expanded");
+
+    // Toggle icon (X or menu)
+    if (navbar.classList.contains("expanded")) {
+      icon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      `;
+    } else {
+      icon.innerHTML = `
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+      `;
+    }
   });

@@ -44,40 +44,68 @@
             overflow: hidden; 
             height: 75em;
         }
+
+
 /* =============================================== NAVBAR =============================================== */
-        .navbar {
-            max-width: 900px;
-            background: white;
-            border-radius: 999px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-            margin-bottom: 4rem;
-            flex-wrap: wrap;
-            margin: 0 auto;
-            padding: 1rem 1.5rem;
-            position: relative;
-            margin-top: 2em;
-        }
+       
 
-        .nav-left {
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-        .nav-left a {
-            text-decoration: none;
-            color: #000;
-        }
+  .navbar {
+    max-width: 900px;
+    background: white;
+    border-radius: 999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    position: relative;
+    margin-top: 2em;
+  }
 
-        .nav-center a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
+  .nav-left {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .nav-left-a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+
+  .nav-center a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    transition: color 0.3s ease;
+    background-color: transparent;
+  }
+  .nav-center a:hover {
+    color: #A0A0A0;
+  }
+  .nav-center a.active {
+    color: #A0A0A0;
+  }
+
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-svg {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+  }
+
+
+
 
         /* =============================================== END NAVBAR =============================================== */
 
@@ -934,26 +962,58 @@
 
     @media (max-width: 1024px) {
 
-        header {
+      header {
             height: 66em;
-        }
+      }
 
-        .navbar {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-        }
 
-        .container {
-            text-align: center;
-        } 
+      .nav-toggle {
+          display: block;
+      }
 
-        .nav-center, .nav-right {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+      .nav-center {
+          width: 100%;
+          flex-direction: column;
+          align-items: flex-end;
+          transition: all 0.3s ease;
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          pointer-events: none;
+      }
+
+      .navbar.expanded {
+          padding-bottom: 1rem;
+      }
+
+      .navbar.expanded .nav-center,
+      .navbar.expanded .nav-right {
+          max-height: 50em;
+          opacity: 1;
+          pointer-events: auto;
+      }
+
+      .navbar.expanded .menu-svg {
+          transform: rotate(90deg);
+      }
+
+      .navbar.expanded .menu-svg path {
+          d: path("M6 18 18 6M6 6l12 12"); /* Animated to X */
+      }
+
+      .nav-center a {
+          margin: 0.5rem 0;
+          display: block;
+          margin-bottom: 20px;
+          line-height: 1.6;
+          letter-spacing: -1.2px;
+      }
+
+      .nav-center a.top {
+          margin-top: 25px;
+      }
+
+
          .hero h1 {
             font-size: 3.5rem;
         }
@@ -1030,7 +1090,7 @@
             height: 45em;
         }
         .hero h1 {
-            font-size: 26px;
+            font-size: 35px;
             line-height: 1.4;
         }
         .hero p {
