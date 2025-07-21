@@ -97,3 +97,21 @@ const toggleBtn = document.getElementById("navToggle");
       `;
     }
   });
+
+
+
+  // ==================================================================== SLIDE IN ANIMATION
+  const intersectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
+  });
+
+  document.querySelectorAll('.slide-in-left, .slide-in-right').forEach(el => {
+    observer.observe(el);
+  });

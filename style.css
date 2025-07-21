@@ -442,6 +442,25 @@
     .faq-item.active .icon i {
       transform: rotate(180deg);
     }
+    
+    .slide-in-left, .slide-in-right {
+        opacity: 0;
+        transition: all 0.8s ease-out;
+      }
+
+      .slide-in-left {
+        transform: translateX(-60px);
+      }
+
+      .slide-in-right {
+        transform: translateX(60px);
+      }
+
+      /* When in view */
+      .in-view {
+        opacity: 1;
+        transform: translateX(0);
+      }
 
 
     @media (max-width: 768px) {
