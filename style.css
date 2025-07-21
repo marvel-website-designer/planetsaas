@@ -982,6 +982,10 @@
           pointer-events: none;
       }
 
+      .nav-center a:hover {
+        color: #000;
+      }
+
       .navbar.expanded {
           padding-bottom: 1rem;
       }
@@ -1007,6 +1011,7 @@
           margin-bottom: 20px;
           line-height: 1.6;
           letter-spacing: -1.2px;
+          color: #A0A0A0;
       }
 
       .nav-center a.top {
@@ -1014,35 +1019,35 @@
       }
 
 
-         .hero h1 {
-            font-size: 3.5rem;
-        }
+        .hero h1 {
+          font-size: 3.5rem;
+      }
 
-         .transform-section {
-            /* max-width: 90%; */
-            margin: 40px auto;
-            padding: 40px;
-        }
+        .transform-section {
+          /* max-width: 90%; */
+          margin: 40px auto;
+          padding: 40px;
+      }
 
-        .card {
-            background: #ffffff;
-            padding: 30px 15px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
-            transition: 0.3s ease;
-        }
-        .card h3 {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
+      .card {
+          background: #ffffff;
+          padding: 30px 15px;
+          border-radius: 20px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+          transition: 0.3s ease;
+      }
+      .card h3 {
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 10px;
+      }
 
-        .card p {
-            font-size: 18px;
-            color: #4b5563;
-            margin-bottom: 16px;
-            line-height: 1.5;
-        }
+      .card p {
+          font-size: 18px;
+          color: #4b5563;
+          margin-bottom: 16px;
+          line-height: 1.5;
+      }
 
 
         
@@ -1086,30 +1091,30 @@
 
     @media (max-width: 768px) {
 
-         header {
-            height: 45em;
-        }
-        .hero h1 {
-            font-size: 35px;
-            line-height: 1.4;
-        }
-        .hero p {
-            font-size: 1rem;
-        }
-        .hero br {
-            display: none;
-        }
-        .transform-section {
-            /* max-width: 90%; */
-            margin: 40px auto;
-            padding: 20px;
-        }
-        .transform-section h1 {
-            font-size: 26px;
-        }
-        .transform-section p {
-            font-size: 16px;
-        }
+        header {
+          height: 45em;
+      }
+      .hero h1 {
+          font-size: 35px;
+          line-height: 1.4;
+      }
+      .hero p {
+          font-size: 1rem;
+      }
+      .hero br {
+          display: none;
+      }
+      .transform-section {
+          /* max-width: 90%; */
+          margin: 40px auto;
+          padding: 20px;
+      }
+      .transform-section h1 {
+          font-size: 26px;
+      }
+      .transform-section p {
+          font-size: 16px;
+      }
 
         
 /* =============================================== SolutionS =============================================== */
